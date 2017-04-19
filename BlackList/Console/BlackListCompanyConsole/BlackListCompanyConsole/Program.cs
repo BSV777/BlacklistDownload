@@ -55,10 +55,10 @@ namespace BlackListCompanyConsole
                 sw.WriteLine("<request>");
                 dtstr = DateTime.Now.ToString("yyyy-MM-ddTHH:mm:ss.fffzzz");
                 sw.WriteLine("<requestTime>" + dtstr + "</requestTime>");
-                sw.WriteLine("<operatorName>Интеллсити</operatorName>");
-                sw.WriteLine("<inn>7706179063</inn>");
-                sw.WriteLine("<ogrn>1037700109611</ogrn>");
-                sw.WriteLine("<email>sysadmin@krt.ru</email>");
+                sw.WriteLine("<operatorName>Company</operatorName>");
+                sw.WriteLine("<inn>1234567890</inn>");
+                sw.WriteLine("<ogrn>1234567890123</ogrn>");
+                sw.WriteLine("<email>sysadmin@company.ru</email>");
                 sw.WriteLine("</request>");
                 sw.Close();
                 fs.Close();                
