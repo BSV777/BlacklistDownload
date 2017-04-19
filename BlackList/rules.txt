@@ -1,0 +1,1276 @@
+/system/script/add=name=cleaner=source=/ip firewall layer7-protocol remove [find comment=register]
+/system script add name='cleaner' source='/ip firewall layer7-protocol remove [find comment=register]'
+/system/script/run=number=cleaner
+/system script run 'cleaner'
+/ip/firewall/layer7-protocol/add=name=60_0=comment=register=regexp=^.+(s4.artemisweb.jp).*$
+/ip/firewall/layer7-protocol/add name="60_0" comment="register" regexp="^.+(s4.artemisweb.jp).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=60_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=60_0 comment=register
+/ip/firewall/layer7-protocol/add=name=68_0=comment=register=regexp=^.+(fast-die.kiev.ua).*$
+/ip/firewall/layer7-protocol/add name="68_0" comment="register" regexp="^.+(fast-die.kiev.ua).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=68_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=68_0 comment=register
+/ip/firewall/layer7-protocol/add=name=85_0=comment=register=regexp=^.+(growclub.org).*$
+/ip/firewall/layer7-protocol/add name="85_0" comment="register" regexp="^.+(growclub.org).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=85_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=85_0 comment=register
+/ip/firewall/layer7-protocol/add=name=97_0=comment=register=regexp=^.+(narkotiki.name).*$
+/ip/firewall/layer7-protocol/add name="97_0" comment="register" regexp="^.+(narkotiki.name).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=97_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=97_0 comment=register
+/ip/firewall/layer7-protocol/add=name=103_0=comment=register=regexp=^.+(shram.kiev.ua).*$
+/ip/firewall/layer7-protocol/add name="103_0" comment="register" regexp="^.+(shram.kiev.ua).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=103_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=103_0 comment=register
+/ip/firewall/layer7-protocol/add=name=262_0=comment=register=regexp=^.+(niceboy.buckshost.com).*$
+/ip/firewall/layer7-protocol/add name="262_0" comment="register" regexp="^.+(niceboy.buckshost.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=262_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=262_0 comment=register
+/ip/firewall/layer7-protocol/add=name=347_0=comment=register=regexp=^.+(video-one.com).*$
+/ip/firewall/layer7-protocol/add name="347_0" comment="register" regexp="^.+(video-one.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=347_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=347_0 comment=register
+/ip/firewall/layer7-protocol/add=name=361_0=comment=register=regexp=^.+(pb.pictureview.com).*$
+/ip/firewall/layer7-protocol/add name="361_0" comment="register" regexp="^.+(pb.pictureview.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=361_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=361_0 comment=register
+/ip/firewall/layer7-protocol/add=name=643_0=comment=register=regexp=^.+(konoplya.2anekdots.ru).*$
+/ip/firewall/layer7-protocol/add name="643_0" comment="register" regexp="^.+(konoplya.2anekdots.ru).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=643_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=643_0 comment=register
+/ip/firewall/layer7-protocol/add=name=656_0=comment=register=regexp=^.+(cannabay.org).*$
+/ip/firewall/layer7-protocol/add name="656_0" comment="register" regexp="^.+(cannabay.org).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=656_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=656_0 comment=register
+/ip/firewall/layer7-protocol/add=name=663_0=comment=register=regexp=^.+(vresearche.com).*$
+/ip/firewall/layer7-protocol/add name="663_0" comment="register" regexp="^.+(vresearche.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=663_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=663_0 comment=register
+/ip/firewall/layer7-protocol/add=name=667_0=comment=register=regexp=^.+(psyplants.org).*$
+/ip/firewall/layer7-protocol/add name="667_0" comment="register" regexp="^.+(psyplants.org).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=667_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=667_0 comment=register
+/ip/firewall/layer7-protocol/add=name=683_0=comment=register=regexp=^.+(hangonet.dyndns.org).*$
+/ip/firewall/layer7-protocol/add name="683_0" comment="register" regexp="^.+(hangonet.dyndns.org).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=683_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=683_0 comment=register
+/ip/firewall/layer7-protocol/add=name=717_0=comment=register=regexp=^.+(psyplants.org).*$
+/ip/firewall/layer7-protocol/add name="717_0" comment="register" regexp="^.+(psyplants.org).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=717_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=717_0 comment=register
+/ip/firewall/layer7-protocol/add=name=785_0=comment=register=regexp=^.+(kolebcev.v-teme.com).*$
+/ip/firewall/layer7-protocol/add name="785_0" comment="register" regexp="^.+(kolebcev.v-teme.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=785_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=785_0 comment=register
+/ip/firewall/layer7-protocol/add=name=958_0=comment=register=regexp=^.+(eoliaseeds.com).*$
+/ip/firewall/layer7-protocol/add name="958_0" comment="register" regexp="^.+(eoliaseeds.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=958_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=958_0 comment=register
+/ip/firewall/layer7-protocol/add=name=976_0=comment=register=regexp=^.+(forum4.aimoo.com).*$
+/ip/firewall/layer7-protocol/add name="976_0" comment="register" regexp="^.+(forum4.aimoo.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=976_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=976_0 comment=register
+/ip/firewall/layer7-protocol/add=name=1157_0=comment=register=regexp=^.+(olkpeace.org).*$
+/ip/firewall/layer7-protocol/add name="1157_0" comment="register" regexp="^.+(olkpeace.org).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=1157_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=1157_0 comment=register
+/ip/firewall/layer7-protocol/add=name=1165_0=comment=register=regexp=^.+(pakaloco.com).*$
+/ip/firewall/layer7-protocol/add name="1165_0" comment="register" regexp="^.+(pakaloco.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=1165_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=1165_0 comment=register
+/ip/firewall/layer7-protocol/add=name=1209_0=comment=register=regexp=^.+(legkoshit.ru).*$
+/ip/firewall/layer7-protocol/add name="1209_0" comment="register" regexp="^.+(legkoshit.ru).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=1209_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=1209_0 comment=register
+/ip/firewall/layer7-protocol/add=name=1248_0=comment=register=regexp=^.+(hbklex.com).*$
+/ip/firewall/layer7-protocol/add name="1248_0" comment="register" regexp="^.+(hbklex.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=1248_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=1248_0 comment=register
+/ip/firewall/layer7-protocol/add=name=1291_0=comment=register=regexp=^.+(ru.pharma-chem.biz).*$
+/ip/firewall/layer7-protocol/add name="1291_0" comment="register" regexp="^.+(ru.pharma-chem.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=1291_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=1291_0 comment=register
+/ip/firewall/layer7-protocol/add=name=1297_0=comment=register=regexp=^.+(nano-seeds.com).*$
+/ip/firewall/layer7-protocol/add name="1297_0" comment="register" regexp="^.+(nano-seeds.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=1297_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=1297_0 comment=register
+/ip/firewall/layer7-protocol/add=name=1357_0=comment=register=regexp=^.+(nano-seeds.com).*$
+/ip/firewall/layer7-protocol/add name="1357_0" comment="register" regexp="^.+(nano-seeds.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=1357_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=1357_0 comment=register
+/ip/firewall/layer7-protocol/add=name=1436_0=comment=register=regexp=^.+(kansotech.com).*$
+/ip/firewall/layer7-protocol/add name="1436_0" comment="register" regexp="^.+(kansotech.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=1436_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=1436_0 comment=register
+/ip/firewall/layer7-protocol/add=name=1450_0=comment=register=regexp=^.+(olkpeace.org).*$
+/ip/firewall/layer7-protocol/add name="1450_0" comment="register" regexp="^.+(olkpeace.org).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=1450_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=1450_0 comment=register
+/ip/firewall/layer7-protocol/add=name=1615_0=comment=register=regexp=^.+(ru.pharma-chem.biz).*$
+/ip/firewall/layer7-protocol/add name="1615_0" comment="register" regexp="^.+(ru.pharma-chem.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=1615_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=1615_0 comment=register
+/ip/firewall/layer7-protocol/add=name=1632_0=comment=register=regexp=^.+(ru.pharma-chem.biz).*$
+/ip/firewall/layer7-protocol/add name="1632_0" comment="register" regexp="^.+(ru.pharma-chem.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=1632_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=1632_0 comment=register
+/ip/firewall/layer7-protocol/add=name=1787_0=comment=register=regexp=^.+(forum4.aimoo.com).*$
+/ip/firewall/layer7-protocol/add name="1787_0" comment="register" regexp="^.+(forum4.aimoo.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=1787_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=1787_0 comment=register
+/ip/firewall/layer7-protocol/add=name=1910_0=comment=register=regexp=^.+(grandstaff.biz).*$
+/ip/firewall/layer7-protocol/add name="1910_0" comment="register" regexp="^.+(grandstaff.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=1910_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=1910_0 comment=register
+/ip/firewall/layer7-protocol/add=name=2201_0=comment=register=regexp=^.+(neolightpower.ru).*$
+/ip/firewall/layer7-protocol/add name="2201_0" comment="register" regexp="^.+(neolightpower.ru).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=2201_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=2201_0 comment=register
+/ip/firewall/layer7-protocol/add=name=2301_0=comment=register=regexp=^.+(ru.pharma-chem.biz).*$
+/ip/firewall/layer7-protocol/add name="2301_0" comment="register" regexp="^.+(ru.pharma-chem.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=2301_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=2301_0 comment=register
+/ip/firewall/layer7-protocol/add=name=3041_0=comment=register=regexp=^.+(legallabel.biz).*$
+/ip/firewall/layer7-protocol/add name="3041_0" comment="register" regexp="^.+(legallabel.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=3041_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=3041_0 comment=register
+/ip/firewall/layer7-protocol/add=name=3745_0=comment=register=regexp=^.+(zakurim.info).*$
+/ip/firewall/layer7-protocol/add name="3745_0" comment="register" regexp="^.+(zakurim.info).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=3745_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=3745_0 comment=register
+/ip/firewall/layer7-protocol/add=name=3746_0=comment=register=regexp=^.+(legalkurim.net).*$
+/ip/firewall/layer7-protocol/add name="3746_0" comment="register" regexp="^.+(legalkurim.net).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=3746_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=3746_0 comment=register
+/ip/firewall/layer7-protocol/add=name=4009_0=comment=register=regexp=^.+(elephantos.com).*$
+/ip/firewall/layer7-protocol/add name="4009_0" comment="register" regexp="^.+(elephantos.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=4009_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=4009_0 comment=register
+/ip/firewall/layer7-protocol/add=name=4081_0=comment=register=regexp=^.+(crystalab.org).*$
+/ip/firewall/layer7-protocol/add name="4081_0" comment="register" regexp="^.+(crystalab.org).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=4081_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=4081_0 comment=register
+/ip/firewall/layer7-protocol/add=name=4162_0=comment=register=regexp=^.+(chemical-mix.com).*$
+/ip/firewall/layer7-protocol/add name="4162_0" comment="register" regexp="^.+(chemical-mix.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=4162_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=4162_0 comment=register
+/ip/firewall/layer7-protocol/add=name=4222_0=comment=register=regexp=^.+(legalpowders.com).*$
+/ip/firewall/layer7-protocol/add name="4222_0" comment="register" regexp="^.+(legalpowders.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=4222_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=4222_0 comment=register
+/ip/firewall/layer7-protocol/add=name=4223_0=comment=register=regexp=^.+(cannabis-world.com).*$
+/ip/firewall/layer7-protocol/add name="4223_0" comment="register" regexp="^.+(cannabis-world.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=4223_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=4223_0 comment=register
+/ip/firewall/layer7-protocol/add=name=4243_0=comment=register=regexp=^.+(spirit-devil.com).*$
+/ip/firewall/layer7-protocol/add name="4243_0" comment="register" regexp="^.+(spirit-devil.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=4243_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=4243_0 comment=register
+/ip/firewall/layer7-protocol/add=name=4247_0=comment=register=regexp=^.+(magic-shop.biz).*$
+/ip/firewall/layer7-protocol/add name="4247_0" comment="register" regexp="^.+(magic-shop.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=4247_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=4247_0 comment=register
+/ip/firewall/layer7-protocol/add=name=4886_0=comment=register=regexp=^.+(ru.pharma-chem.biz).*$
+/ip/firewall/layer7-protocol/add name="4886_0" comment="register" regexp="^.+(ru.pharma-chem.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=4886_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=4886_0 comment=register
+/ip/firewall/layer7-protocol/add=name=5041_0=comment=register=regexp=^.+(elephantos.com).*$
+/ip/firewall/layer7-protocol/add name="5041_0" comment="register" regexp="^.+(elephantos.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=5041_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=5041_0 comment=register
+/ip/firewall/layer7-protocol/add=name=5068_0=comment=register=regexp=^.+(narkop.bz).*$
+/ip/firewall/layer7-protocol/add name="5068_0" comment="register" regexp="^.+(narkop.bz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=5068_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=5068_0 comment=register
+/ip/firewall/layer7-protocol/add=name=5171_0=comment=register=regexp=^.+(lolo4ki.pusku.com).*$
+/ip/firewall/layer7-protocol/add name="5171_0" comment="register" regexp="^.+(lolo4ki.pusku.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=5171_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=5171_0 comment=register
+/ip/firewall/layer7-protocol/add=name=5522_0=comment=register=regexp=^.+(go-krit.com).*$
+/ip/firewall/layer7-protocol/add name="5522_0" comment="register" regexp="^.+(go-krit.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=5522_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=5522_0 comment=register
+/ip/firewall/layer7-protocol/add=name=5541_0=comment=register=regexp=^.+(cannabisnature.com).*$
+/ip/firewall/layer7-protocol/add name="5541_0" comment="register" regexp="^.+(cannabisnature.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=5541_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=5541_0 comment=register
+/ip/firewall/layer7-protocol/add=name=6021_0=comment=register=regexp=^.+(legalpowders.com).*$
+/ip/firewall/layer7-protocol/add name="6021_0" comment="register" regexp="^.+(legalpowders.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=6021_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=6021_0 comment=register
+/ip/firewall/layer7-protocol/add=name=6482_0=comment=register=regexp=^.+(erowid.org).*$
+/ip/firewall/layer7-protocol/add name="6482_0" comment="register" regexp="^.+(erowid.org).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=6482_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=6482_0 comment=register
+/ip/firewall/layer7-protocol/add=name=6742_0=comment=register=regexp=^.+(konoplya.tv).*$
+/ip/firewall/layer7-protocol/add name="6742_0" comment="register" regexp="^.+(konoplya.tv).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=6742_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=6742_0 comment=register
+/ip/firewall/layer7-protocol/add=name=6802_0=comment=register=regexp=^.+(legalkurim.biz).*$
+/ip/firewall/layer7-protocol/add name="6802_0" comment="register" regexp="^.+(legalkurim.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=6802_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=6802_0 comment=register
+/ip/firewall/layer7-protocol/add=name=6981_0=comment=register=regexp=^.+(xn--80affxdmh4i.com).*$
+/ip/firewall/layer7-protocol/add name="6981_0" comment="register" regexp="^.+(xn--80affxdmh4i.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=6981_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=6981_0 comment=register
+/ip/firewall/layer7-protocol/add=name=7088_0=comment=register=regexp=^.+(narkotiki.name).*$
+/ip/firewall/layer7-protocol/add name="7088_0" comment="register" regexp="^.+(narkotiki.name).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=7088_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=7088_0 comment=register
+/ip/firewall/layer7-protocol/add=name=7143_0=comment=register=regexp=^.+(royalqueenseeds.ru).*$
+/ip/firewall/layer7-protocol/add name="7143_0" comment="register" regexp="^.+(royalqueenseeds.ru).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=7143_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=7143_0 comment=register
+/ip/firewall/layer7-protocol/add=name=7222_0=comment=register=regexp=^.+(orz.gurochan.net).*$
+/ip/firewall/layer7-protocol/add name="7222_0" comment="register" regexp="^.+(orz.gurochan.net).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=7222_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=7222_0 comment=register
+/ip/firewall/layer7-protocol/add=name=7223_0=comment=register=regexp=^.+(dematom.com).*$
+/ip/firewall/layer7-protocol/add name="7223_0" comment="register" regexp="^.+(dematom.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=7223_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=7223_0 comment=register
+/ip/firewall/layer7-protocol/add=name=7286_0=comment=register=regexp=^.+(chemicalterra.com).*$
+/ip/firewall/layer7-protocol/add name="7286_0" comment="register" regexp="^.+(chemicalterra.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=7286_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=7286_0 comment=register
+/ip/firewall/layer7-protocol/add=name=7331_0=comment=register=regexp=^.+(psyplants.org).*$
+/ip/firewall/layer7-protocol/add name="7331_0" comment="register" regexp="^.+(psyplants.org).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=7331_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=7331_0 comment=register
+/ip/firewall/layer7-protocol/add=name=7371_0=comment=register=regexp=^.+(aromat-store.com).*$
+/ip/firewall/layer7-protocol/add name="7371_0" comment="register" regexp="^.+(aromat-store.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=7371_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=7371_0 comment=register
+/ip/firewall/layer7-protocol/add=name=7375_0=comment=register=regexp=^.+(legalkurim.net).*$
+/ip/firewall/layer7-protocol/add name="7375_0" comment="register" regexp="^.+(legalkurim.net).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=7375_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=7375_0 comment=register
+/ip/firewall/layer7-protocol/add=name=7432_0=comment=register=regexp=^.+(kanava.biz.nf).*$
+/ip/firewall/layer7-protocol/add name="7432_0" comment="register" regexp="^.+(kanava.biz.nf).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=7432_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=7432_0 comment=register
+/ip/firewall/layer7-protocol/add=name=7433_0=comment=register=regexp=^.+(hopstopia.mk.ua).*$
+/ip/firewall/layer7-protocol/add name="7433_0" comment="register" regexp="^.+(hopstopia.mk.ua).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=7433_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=7433_0 comment=register
+/ip/firewall/layer7-protocol/add=name=7487_0=comment=register=regexp=^.+(europallets.net).*$
+/ip/firewall/layer7-protocol/add name="7487_0" comment="register" regexp="^.+(europallets.net).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=7487_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=7487_0 comment=register
+/ip/firewall/layer7-protocol/add=name=7501_0=comment=register=regexp=^.+(raznosvet.com).*$
+/ip/firewall/layer7-protocol/add name="7501_0" comment="register" regexp="^.+(raznosvet.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=7501_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=7501_0 comment=register
+/ip/firewall/layer7-protocol/add=name=7685_0=comment=register=regexp=^.+(legal-smoking-blends.net46.net).*$
+/ip/firewall/layer7-protocol/add name="7685_0" comment="register" regexp="^.+(legal-smoking-blends.net46.net).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=7685_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=7685_0 comment=register
+/ip/firewall/layer7-protocol/add=name=7690_0=comment=register=regexp=^.+(vresearche.com).*$
+/ip/firewall/layer7-protocol/add name="7690_0" comment="register" regexp="^.+(vresearche.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=7690_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=7690_0 comment=register
+/ip/firewall/layer7-protocol/add=name=7749_0=comment=register=regexp=^.+(legal-garden.com).*$
+/ip/firewall/layer7-protocol/add name="7749_0" comment="register" regexp="^.+(legal-garden.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=7749_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=7749_0 comment=register
+/ip/firewall/layer7-protocol/add=name=7780_0=comment=register=regexp=^.+(crystalab.org).*$
+/ip/firewall/layer7-protocol/add name="7780_0" comment="register" regexp="^.+(crystalab.org).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=7780_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=7780_0 comment=register
+/ip/firewall/layer7-protocol/add=name=7845_0=comment=register=regexp=^.+(arkh.net).*$
+/ip/firewall/layer7-protocol/add name="7845_0" comment="register" regexp="^.+(arkh.net).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=7845_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=7845_0 comment=register
+/ip/firewall/layer7-protocol/add=name=7865_0=comment=register=regexp=^.+(suicide-forum.com).*$
+/ip/firewall/layer7-protocol/add name="7865_0" comment="register" regexp="^.+(suicide-forum.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=7865_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=7865_0 comment=register
+/ip/firewall/layer7-protocol/add=name=7938_0=comment=register=regexp=^.+(glyki.biz).*$
+/ip/firewall/layer7-protocol/add name="7938_0" comment="register" regexp="^.+(glyki.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=7938_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=7938_0 comment=register
+/ip/firewall/layer7-protocol/add=name=7957_0=comment=register=regexp=^.+(forum4.aimoo.com).*$
+/ip/firewall/layer7-protocol/add name="7957_0" comment="register" regexp="^.+(forum4.aimoo.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=7957_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=7957_0 comment=register
+/ip/firewall/layer7-protocol/add=name=7989_0=comment=register=regexp=^.+(pauk.biz).*$
+/ip/firewall/layer7-protocol/add name="7989_0" comment="register" regexp="^.+(pauk.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=7989_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=7989_0 comment=register
+/ip/firewall/layer7-protocol/add=name=8073_0=comment=register=regexp=^.+(legal-powder.com).*$
+/ip/firewall/layer7-protocol/add name="8073_0" comment="register" regexp="^.+(legal-powder.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=8073_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=8073_0 comment=register
+/ip/firewall/layer7-protocol/add=name=8090_0=comment=register=regexp=^.+(glyki.biz).*$
+/ip/firewall/layer7-protocol/add name="8090_0" comment="register" regexp="^.+(glyki.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=8090_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=8090_0 comment=register
+/ip/firewall/layer7-protocol/add=name=8175_0=comment=register=regexp=^.+(77moskva.net).*$
+/ip/firewall/layer7-protocol/add name="8175_0" comment="register" regexp="^.+(77moskva.net).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=8175_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=8175_0 comment=register
+/ip/firewall/layer7-protocol/add=name=8192_0=comment=register=regexp=^.+(74chelyabinsk.net).*$
+/ip/firewall/layer7-protocol/add name="8192_0" comment="register" regexp="^.+(74chelyabinsk.net).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=8192_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=8192_0 comment=register
+/ip/firewall/layer7-protocol/add=name=8197_0=comment=register=regexp=^.+(go-krit.com).*$
+/ip/firewall/layer7-protocol/add name="8197_0" comment="register" regexp="^.+(go-krit.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=8197_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=8197_0 comment=register
+/ip/firewall/layer7-protocol/add=name=8202_0=comment=register=regexp=^.+(aromat-store.com).*$
+/ip/firewall/layer7-protocol/add name="8202_0" comment="register" regexp="^.+(aromat-store.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=8202_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=8202_0 comment=register
+/ip/firewall/layer7-protocol/add=name=8204_0=comment=register=regexp=^.+(legal-powder.com).*$
+/ip/firewall/layer7-protocol/add name="8204_0" comment="register" regexp="^.+(legal-powder.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=8204_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=8204_0 comment=register
+/ip/firewall/layer7-protocol/add=name=8206_0=comment=register=regexp=^.+(cannabisnature.com).*$
+/ip/firewall/layer7-protocol/add name="8206_0" comment="register" regexp="^.+(cannabisnature.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=8206_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=8206_0 comment=register
+/ip/firewall/layer7-protocol/add=name=8212_0=comment=register=regexp=^.+(fundunia.wapka.mobi).*$
+/ip/firewall/layer7-protocol/add name="8212_0" comment="register" regexp="^.+(fundunia.wapka.mobi).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=8212_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=8212_0 comment=register
+/ip/firewall/layer7-protocol/add=name=8231_0=comment=register=regexp=^.+(stervozzinka.dreamwidth.org).*$
+/ip/firewall/layer7-protocol/add name="8231_0" comment="register" regexp="^.+(stervozzinka.dreamwidth.org).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=8231_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=8231_0 comment=register
+/ip/firewall/layer7-protocol/add=name=8474_0=comment=register=regexp=^.+(ore.lt).*$
+/ip/firewall/layer7-protocol/add name="8474_0" comment="register" regexp="^.+(ore.lt).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=8474_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=8474_0 comment=register
+/ip/firewall/layer7-protocol/add=name=8491_0=comment=register=regexp=^.+(digitalmanuscript.com).*$
+/ip/firewall/layer7-protocol/add name="8491_0" comment="register" regexp="^.+(digitalmanuscript.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=8491_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=8491_0 comment=register
+/ip/firewall/layer7-protocol/add=name=8511_0=comment=register=regexp=^.+(4fa.biz).*$
+/ip/firewall/layer7-protocol/add name="8511_0" comment="register" regexp="^.+(4fa.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=8511_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=8511_0 comment=register
+/ip/firewall/layer7-protocol/add=name=8513_0=comment=register=regexp=^.+(cannabisnature.com).*$
+/ip/firewall/layer7-protocol/add name="8513_0" comment="register" regexp="^.+(cannabisnature.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=8513_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=8513_0 comment=register
+/ip/firewall/layer7-protocol/add=name=8523_0=comment=register=regexp=^.+(psyplants.org).*$
+/ip/firewall/layer7-protocol/add name="8523_0" comment="register" regexp="^.+(psyplants.org).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=8523_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=8523_0 comment=register
+/ip/firewall/layer7-protocol/add=name=8524_0=comment=register=regexp=^.+(legal-powder.com).*$
+/ip/firewall/layer7-protocol/add name="8524_0" comment="register" regexp="^.+(legal-powder.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=8524_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=8524_0 comment=register
+/ip/firewall/layer7-protocol/add=name=8530_0=comment=register=regexp=^.+(66ekaterinburg.net).*$
+/ip/firewall/layer7-protocol/add name="8530_0" comment="register" regexp="^.+(66ekaterinburg.net).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=8530_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=8530_0 comment=register
+/ip/firewall/layer7-protocol/add=name=8584_0=comment=register=regexp=^.+(34volgograd.net).*$
+/ip/firewall/layer7-protocol/add name="8584_0" comment="register" regexp="^.+(34volgograd.net).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=8584_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=8584_0 comment=register
+/ip/firewall/layer7-protocol/add=name=8590_0=comment=register=regexp=^.+(3mdx.net).*$
+/ip/firewall/layer7-protocol/add name="8590_0" comment="register" regexp="^.+(3mdx.net).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=8590_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=8590_0 comment=register
+/ip/firewall/layer7-protocol/add=name=8611_0=comment=register=regexp=^.+(afganincense.com).*$
+/ip/firewall/layer7-protocol/add name="8611_0" comment="register" regexp="^.+(afganincense.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=8611_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=8611_0 comment=register
+/ip/firewall/layer7-protocol/add=name=8617_0=comment=register=regexp=^.+(ruckp.org).*$
+/ip/firewall/layer7-protocol/add name="8617_0" comment="register" regexp="^.+(ruckp.org).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=8617_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=8617_0 comment=register
+/ip/firewall/layer7-protocol/add=name=8626_0=comment=register=regexp=^.+(legalki.com).*$
+/ip/firewall/layer7-protocol/add name="8626_0" comment="register" regexp="^.+(legalki.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=8626_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=8626_0 comment=register
+/ip/firewall/layer7-protocol/add=name=8695_0=comment=register=regexp=^.+(legalki.com).*$
+/ip/firewall/layer7-protocol/add name="8695_0" comment="register" regexp="^.+(legalki.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=8695_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=8695_0 comment=register
+/ip/firewall/layer7-protocol/add=name=8744_0=comment=register=regexp=^.+(77moskva.net).*$
+/ip/firewall/layer7-protocol/add name="8744_0" comment="register" regexp="^.+(77moskva.net).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=8744_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=8744_0 comment=register
+/ip/firewall/layer7-protocol/add=name=8745_0=comment=register=regexp=^.+(buy-jwh.com).*$
+/ip/firewall/layer7-protocol/add name="8745_0" comment="register" regexp="^.+(buy-jwh.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=8745_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=8745_0 comment=register
+/ip/firewall/layer7-protocol/add=name=8766_0=comment=register=regexp=^.+(afganincense.com).*$
+/ip/firewall/layer7-protocol/add name="8766_0" comment="register" regexp="^.+(afganincense.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=8766_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=8766_0 comment=register
+/ip/firewall/layer7-protocol/add=name=9050_0=comment=register=regexp=^.+(kuritelnye-smesit.com).*$
+/ip/firewall/layer7-protocol/add name="9050_0" comment="register" regexp="^.+(kuritelnye-smesit.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=9050_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=9050_0 comment=register
+/ip/firewall/layer7-protocol/add=name=9077_0=comment=register=regexp=^.+(vdrova.com).*$
+/ip/firewall/layer7-protocol/add name="9077_0" comment="register" regexp="^.+(vdrova.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=9077_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=9077_0 comment=register
+/ip/firewall/layer7-protocol/add=name=9766_0=comment=register=regexp=^.+(modafinil24.com).*$
+/ip/firewall/layer7-protocol/add name="9766_0" comment="register" regexp="^.+(modafinil24.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=9766_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=9766_0 comment=register
+/ip/firewall/layer7-protocol/add=name=9865_0=comment=register=regexp=^.+(new-synthetics.org).*$
+/ip/firewall/layer7-protocol/add name="9865_0" comment="register" regexp="^.+(new-synthetics.org).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=9865_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=9865_0 comment=register
+/ip/firewall/layer7-protocol/add=name=9872_0=comment=register=regexp=^.+(besthim.biz).*$
+/ip/firewall/layer7-protocol/add name="9872_0" comment="register" regexp="^.+(besthim.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=9872_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=9872_0 comment=register
+/ip/firewall/layer7-protocol/add=name=9911_0=comment=register=regexp=^.+(leg-nar.com).*$
+/ip/firewall/layer7-protocol/add name="9911_0" comment="register" regexp="^.+(leg-nar.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=9911_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=9911_0 comment=register
+/ip/firewall/layer7-protocol/add=name=9917_0=comment=register=regexp=^.+(legalbrend.biz).*$
+/ip/firewall/layer7-protocol/add name="9917_0" comment="register" regexp="^.+(legalbrend.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=9917_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=9917_0 comment=register
+/ip/firewall/layer7-protocol/add=name=9975_0=comment=register=regexp=^.+(pokuri.net).*$
+/ip/firewall/layer7-protocol/add name="9975_0" comment="register" regexp="^.+(pokuri.net).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=9975_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=9975_0 comment=register
+/ip/firewall/layer7-protocol/add=name=9988_0=comment=register=regexp=^.+(weed4you.com).*$
+/ip/firewall/layer7-protocol/add name="9988_0" comment="register" regexp="^.+(weed4you.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=9988_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=9988_0 comment=register
+/ip/firewall/layer7-protocol/add=name=10046_0=comment=register=regexp=^.+(legal-powder.com).*$
+/ip/firewall/layer7-protocol/add name="10046_0" comment="register" regexp="^.+(legal-powder.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=10046_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=10046_0 comment=register
+/ip/firewall/layer7-protocol/add=name=10048_0=comment=register=regexp=^.+(legalka.org).*$
+/ip/firewall/layer7-protocol/add name="10048_0" comment="register" regexp="^.+(legalka.org).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=10048_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=10048_0 comment=register
+/ip/firewall/layer7-protocol/add=name=10230_0=comment=register=regexp=^.+(34volgograd.net).*$
+/ip/firewall/layer7-protocol/add name="10230_0" comment="register" regexp="^.+(34volgograd.net).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=10230_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=10230_0 comment=register
+/ip/firewall/layer7-protocol/add=name=10233_0=comment=register=regexp=^.+(54novosib.net).*$
+/ip/firewall/layer7-protocol/add name="10233_0" comment="register" regexp="^.+(54novosib.net).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=10233_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=10233_0 comment=register
+/ip/firewall/layer7-protocol/add=name=10234_0=comment=register=regexp=^.+(shaman99.com).*$
+/ip/firewall/layer7-protocol/add name="10234_0" comment="register" regexp="^.+(shaman99.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=10234_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=10234_0 comment=register
+/ip/firewall/layer7-protocol/add=name=10235_0=comment=register=regexp=^.+(27habarovsk.net).*$
+/ip/firewall/layer7-protocol/add name="10235_0" comment="register" regexp="^.+(27habarovsk.net).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=10235_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=10235_0 comment=register
+/ip/firewall/layer7-protocol/add=name=10236_0=comment=register=regexp=^.+(78sankt-peterburg.net).*$
+/ip/firewall/layer7-protocol/add name="10236_0" comment="register" regexp="^.+(78sankt-peterburg.net).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=10236_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=10236_0 comment=register
+/ip/firewall/layer7-protocol/add=name=10238_0=comment=register=regexp=^.+(66ekaterinburg.net).*$
+/ip/firewall/layer7-protocol/add name="10238_0" comment="register" regexp="^.+(66ekaterinburg.net).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=10238_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=10238_0 comment=register
+/ip/firewall/layer7-protocol/add=name=10243_0=comment=register=regexp=^.+(vdrova.com).*$
+/ip/firewall/layer7-protocol/add name="10243_0" comment="register" regexp="^.+(vdrova.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=10243_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=10243_0 comment=register
+/ip/firewall/layer7-protocol/add=name=13244_0=comment=register=regexp=^.+(2ch.nu).*$
+/ip/firewall/layer7-protocol/add name="13244_0" comment="register" regexp="^.+(2ch.nu).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=13244_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=13244_0 comment=register
+/ip/firewall/layer7-protocol/add=name=16490_0=comment=register=regexp=^.+(forparty.biz).*$
+/ip/firewall/layer7-protocol/add name="16490_0" comment="register" regexp="^.+(forparty.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=16490_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=16490_0 comment=register
+/ip/firewall/layer7-protocol/add=name=16564_0=comment=register=regexp=^.+(go-krit.com).*$
+/ip/firewall/layer7-protocol/add name="16564_0" comment="register" regexp="^.+(go-krit.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=16564_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=16564_0 comment=register
+/ip/firewall/layer7-protocol/add=name=16786_0=comment=register=regexp=^.+(seven7.biz).*$
+/ip/firewall/layer7-protocol/add name="16786_0" comment="register" regexp="^.+(seven7.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=16786_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=16786_0 comment=register
+/ip/firewall/layer7-protocol/add=name=16904_0=comment=register=regexp=^.+(go-krit.com).*$
+/ip/firewall/layer7-protocol/add name="16904_0" comment="register" regexp="^.+(go-krit.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=16904_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=16904_0 comment=register
+/ip/firewall/layer7-protocol/add=name=17064_0=comment=register=regexp=^.+(2ch.nu).*$
+/ip/firewall/layer7-protocol/add name="17064_0" comment="register" regexp="^.+(2ch.nu).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=17064_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=17064_0 comment=register
+/ip/firewall/layer7-protocol/add=name=17204_0=comment=register=regexp=^.+(legalbrend.biz).*$
+/ip/firewall/layer7-protocol/add name="17204_0" comment="register" regexp="^.+(legalbrend.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=17204_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=17204_0 comment=register
+/ip/firewall/layer7-protocol/add=name=19774_0=comment=register=regexp=^.+(kk-pu.com).*$
+/ip/firewall/layer7-protocol/add name="19774_0" comment="register" regexp="^.+(kk-pu.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=19774_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=19774_0 comment=register
+/ip/firewall/layer7-protocol/add=name=19775_0=comment=register=regexp=^.+(kchemindus.com).*$
+/ip/firewall/layer7-protocol/add name="19775_0" comment="register" regexp="^.+(kchemindus.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=19775_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=19775_0 comment=register
+/ip/firewall/layer7-protocol/add=name=24241_0=comment=register=regexp=^.+(rcsbroker.com).*$
+/ip/firewall/layer7-protocol/add name="24241_0" comment="register" regexp="^.+(rcsbroker.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=24241_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=24241_0 comment=register
+/ip/firewall/layer7-protocol/add=name=24269_0=comment=register=regexp=^.+(buyresearchchemical.net).*$
+/ip/firewall/layer7-protocol/add name="24269_0" comment="register" regexp="^.+(buyresearchchemical.net).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=24269_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=24269_0 comment=register
+/ip/firewall/layer7-protocol/add=name=24286_0=comment=register=regexp=^.+(rcsyn.com).*$
+/ip/firewall/layer7-protocol/add name="24286_0" comment="register" regexp="^.+(rcsyn.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=24286_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=24286_0 comment=register
+/ip/firewall/layer7-protocol/add=name=24313_0=comment=register=regexp=^.+(crystalab.biz).*$
+/ip/firewall/layer7-protocol/add name="24313_0" comment="register" regexp="^.+(crystalab.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=24313_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=24313_0 comment=register
+/ip/firewall/layer7-protocol/add=name=24564_0=comment=register=regexp=^.+(escobarclub.biz).*$
+/ip/firewall/layer7-protocol/add name="24564_0" comment="register" regexp="^.+(escobarclub.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=24564_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=24564_0 comment=register
+/ip/firewall/layer7-protocol/add=name=25294_0=comment=register=regexp=^.+(eric1234.com).*$
+/ip/firewall/layer7-protocol/add name="25294_0" comment="register" regexp="^.+(eric1234.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=25294_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=25294_0 comment=register
+/ip/firewall/layer7-protocol/add=name=28128_0=comment=register=regexp=^.+(23krasnodar.net).*$
+/ip/firewall/layer7-protocol/add name="28128_0" comment="register" regexp="^.+(23krasnodar.net).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=28128_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=28128_0 comment=register
+/ip/firewall/layer7-protocol/add=name=28131_0=comment=register=regexp=^.+(global-hemp.org).*$
+/ip/firewall/layer7-protocol/add name="28131_0" comment="register" regexp="^.+(global-hemp.org).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=28131_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=28131_0 comment=register
+/ip/firewall/layer7-protocol/add=name=28133_0=comment=register=regexp=^.+(afganincense.net).*$
+/ip/firewall/layer7-protocol/add name="28133_0" comment="register" regexp="^.+(afganincense.net).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=28133_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=28133_0 comment=register
+/ip/firewall/layer7-protocol/add=name=28154_0=comment=register=regexp=^.+(blackroad.biz).*$
+/ip/firewall/layer7-protocol/add name="28154_0" comment="register" regexp="^.+(blackroad.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=28154_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=28154_0 comment=register
+/ip/firewall/layer7-protocol/add=name=28157_0=comment=register=regexp=^.+(kupimiks.com).*$
+/ip/firewall/layer7-protocol/add name="28157_0" comment="register" regexp="^.+(kupimiks.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=28157_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=28157_0 comment=register
+/ip/firewall/layer7-protocol/add=name=28161_0=comment=register=regexp=^.+(relaxy.org).*$
+/ip/firewall/layer7-protocol/add name="28161_0" comment="register" regexp="^.+(relaxy.org).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=28161_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=28161_0 comment=register
+/ip/firewall/layer7-protocol/add=name=28746_0=comment=register=regexp=^.+(jwh-x.net).*$
+/ip/firewall/layer7-protocol/add name="28746_0" comment="register" regexp="^.+(jwh-x.net).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=28746_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=28746_0 comment=register
+/ip/firewall/layer7-protocol/add=name=28804_0=comment=register=regexp=^.+(mix-aroma.com).*$
+/ip/firewall/layer7-protocol/add name="28804_0" comment="register" regexp="^.+(mix-aroma.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=28804_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=28804_0 comment=register
+/ip/firewall/layer7-protocol/add=name=28831_0=comment=register=regexp=^.+(opt-jwh.net).*$
+/ip/firewall/layer7-protocol/add name="28831_0" comment="register" regexp="^.+(opt-jwh.net).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=28831_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=28831_0 comment=register
+/ip/firewall/layer7-protocol/add=name=28891_0=comment=register=regexp=^.+(legpills.biz).*$
+/ip/firewall/layer7-protocol/add name="28891_0" comment="register" regexp="^.+(legpills.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=28891_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=28891_0 comment=register
+/ip/firewall/layer7-protocol/add=name=31189_0=comment=register=regexp=^.+(semyanich.com).*$
+/ip/firewall/layer7-protocol/add name="31189_0" comment="register" regexp="^.+(semyanich.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=31189_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=31189_0 comment=register
+/ip/firewall/layer7-protocol/add=name=31225_0=comment=register=regexp=^.+(legalrc.biz).*$
+/ip/firewall/layer7-protocol/add name="31225_0" comment="register" regexp="^.+(legalrc.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=31225_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=31225_0 comment=register
+/ip/firewall/layer7-protocol/add=name=31226_0=comment=register=regexp=^.+(legalrc.biz).*$
+/ip/firewall/layer7-protocol/add name="31226_0" comment="register" regexp="^.+(legalrc.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=31226_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=31226_0 comment=register
+/ip/firewall/layer7-protocol/add=name=31244_0=comment=register=regexp=^.+(legalrc.biz).*$
+/ip/firewall/layer7-protocol/add name="31244_0" comment="register" regexp="^.+(legalrc.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=31244_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=31244_0 comment=register
+/ip/firewall/layer7-protocol/add=name=31345_0=comment=register=regexp=^.+(videoexclusiv.com).*$
+/ip/firewall/layer7-protocol/add name="31345_0" comment="register" regexp="^.+(videoexclusiv.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=31345_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=31345_0 comment=register
+/ip/firewall/layer7-protocol/add=name=31365_0=comment=register=regexp=^.+(xam.juplo.com).*$
+/ip/firewall/layer7-protocol/add name="31365_0" comment="register" regexp="^.+(xam.juplo.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=31365_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=31365_0 comment=register
+/ip/firewall/layer7-protocol/add=name=31489_0=comment=register=regexp=^.+(wayaway.biz).*$
+/ip/firewall/layer7-protocol/add name="31489_0" comment="register" regexp="^.+(wayaway.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=31489_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=31489_0 comment=register
+/ip/firewall/layer7-protocol/add=name=31565_0=comment=register=regexp=^.+(legalbuds.com).*$
+/ip/firewall/layer7-protocol/add name="31565_0" comment="register" regexp="^.+(legalbuds.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=31565_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=31565_0 comment=register
+/ip/firewall/layer7-protocol/add=name=31568_0=comment=register=regexp=^.+(awesomeplantfood.com).*$
+/ip/firewall/layer7-protocol/add name="31568_0" comment="register" regexp="^.+(awesomeplantfood.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=31568_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=31568_0 comment=register
+/ip/firewall/layer7-protocol/add=name=31785_0=comment=register=regexp=^.+(drugspace.info).*$
+/ip/firewall/layer7-protocol/add name="31785_0" comment="register" regexp="^.+(drugspace.info).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=31785_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=31785_0 comment=register
+/ip/firewall/layer7-protocol/add=name=31865_0=comment=register=regexp=^.+(durmagen.com).*$
+/ip/firewall/layer7-protocol/add name="31865_0" comment="register" regexp="^.+(durmagen.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=31865_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=31865_0 comment=register
+/ip/firewall/layer7-protocol/add=name=31866_0=comment=register=regexp=^.+(travagen.com).*$
+/ip/firewall/layer7-protocol/add name="31866_0" comment="register" regexp="^.+(travagen.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=31866_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=31866_0 comment=register
+/ip/firewall/layer7-protocol/add=name=31867_0=comment=register=regexp=^.+(kuritelniesmesi.com).*$
+/ip/firewall/layer7-protocol/add name="31867_0" comment="register" regexp="^.+(kuritelniesmesi.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=31867_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=31867_0 comment=register
+/ip/firewall/layer7-protocol/add=name=31868_0=comment=register=regexp=^.+(otilagod.com).*$
+/ip/firewall/layer7-protocol/add name="31868_0" comment="register" regexp="^.+(otilagod.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=31868_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=31868_0 comment=register
+/ip/firewall/layer7-protocol/add=name=31884_0=comment=register=regexp=^.+(smesebum.com).*$
+/ip/firewall/layer7-protocol/add name="31884_0" comment="register" regexp="^.+(smesebum.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=31884_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=31884_0 comment=register
+/ip/firewall/layer7-protocol/add=name=31889_0=comment=register=regexp=^.+(legalkurim.biz).*$
+/ip/firewall/layer7-protocol/add name="31889_0" comment="register" regexp="^.+(legalkurim.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=31889_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=31889_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32029_0=comment=register=regexp=^.+(gonzastaf.com).*$
+/ip/firewall/layer7-protocol/add name="32029_0" comment="register" regexp="^.+(gonzastaf.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32029_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32029_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32030_0=comment=register=regexp=^.+(aromagood.com).*$
+/ip/firewall/layer7-protocol/add name="32030_0" comment="register" regexp="^.+(aromagood.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32030_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32030_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32031_0=comment=register=regexp=^.+(legalkurim.biz).*$
+/ip/firewall/layer7-protocol/add name="32031_0" comment="register" regexp="^.+(legalkurim.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32031_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32031_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32032_0=comment=register=regexp=^.+(densesmoke.com).*$
+/ip/firewall/layer7-protocol/add name="32032_0" comment="register" regexp="^.+(densesmoke.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32032_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32032_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32033_0=comment=register=regexp=^.+(zelomix.com).*$
+/ip/firewall/layer7-protocol/add name="32033_0" comment="register" regexp="^.+(zelomix.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32033_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32033_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32064_0=comment=register=regexp=^.+(smokemixes.com).*$
+/ip/firewall/layer7-protocol/add name="32064_0" comment="register" regexp="^.+(smokemixes.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32064_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32064_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32066_0=comment=register=regexp=^.+(mixpowdershop.com).*$
+/ip/firewall/layer7-protocol/add name="32066_0" comment="register" regexp="^.+(mixpowdershop.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32066_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32066_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32067_0=comment=register=regexp=^.+(morgod.com).*$
+/ip/firewall/layer7-protocol/add name="32067_0" comment="register" regexp="^.+(morgod.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32067_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32067_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32068_0=comment=register=regexp=^.+(morgod.com).*$
+/ip/firewall/layer7-protocol/add name="32068_0" comment="register" regexp="^.+(morgod.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32068_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32068_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32069_0=comment=register=regexp=^.+(morgod.com).*$
+/ip/firewall/layer7-protocol/add name="32069_0" comment="register" regexp="^.+(morgod.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32069_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32069_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32070_0=comment=register=regexp=^.+(jokersila.com).*$
+/ip/firewall/layer7-protocol/add name="32070_0" comment="register" regexp="^.+(jokersila.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32070_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32070_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32071_0=comment=register=regexp=^.+(jokersila.com).*$
+/ip/firewall/layer7-protocol/add name="32071_0" comment="register" regexp="^.+(jokersila.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32071_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32071_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32072_0=comment=register=regexp=^.+(jokersila.com).*$
+/ip/firewall/layer7-protocol/add name="32072_0" comment="register" regexp="^.+(jokersila.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32072_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32072_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32084_0=comment=register=regexp=^.+(zelomix.com).*$
+/ip/firewall/layer7-protocol/add name="32084_0" comment="register" regexp="^.+(zelomix.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32084_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32084_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32104_0=comment=register=regexp=^.+(jokersila.com).*$
+/ip/firewall/layer7-protocol/add name="32104_0" comment="register" regexp="^.+(jokersila.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32104_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32104_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32105_0=comment=register=regexp=^.+(otilagod.com).*$
+/ip/firewall/layer7-protocol/add name="32105_0" comment="register" regexp="^.+(otilagod.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32105_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32105_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32106_0=comment=register=regexp=^.+(avtosales.com).*$
+/ip/firewall/layer7-protocol/add name="32106_0" comment="register" regexp="^.+(avtosales.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32106_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32106_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32107_0=comment=register=regexp=^.+(avtosales.com).*$
+/ip/firewall/layer7-protocol/add name="32107_0" comment="register" regexp="^.+(avtosales.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32107_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32107_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32108_0=comment=register=regexp=^.+(avtosales.com).*$
+/ip/firewall/layer7-protocol/add name="32108_0" comment="register" regexp="^.+(avtosales.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32108_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32108_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32109_0=comment=register=regexp=^.+(otilagod.com).*$
+/ip/firewall/layer7-protocol/add name="32109_0" comment="register" regexp="^.+(otilagod.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32109_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32109_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32110_0=comment=register=regexp=^.+(jokersila.com).*$
+/ip/firewall/layer7-protocol/add name="32110_0" comment="register" regexp="^.+(jokersila.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32110_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32110_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32111_0=comment=register=regexp=^.+(robursale.com).*$
+/ip/firewall/layer7-protocol/add name="32111_0" comment="register" regexp="^.+(robursale.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32111_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32111_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32112_0=comment=register=regexp=^.+(robursale.com).*$
+/ip/firewall/layer7-protocol/add name="32112_0" comment="register" regexp="^.+(robursale.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32112_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32112_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32124_0=comment=register=regexp=^.+(robursale.com).*$
+/ip/firewall/layer7-protocol/add name="32124_0" comment="register" regexp="^.+(robursale.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32124_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32124_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32125_0=comment=register=regexp=^.+(robursale.com).*$
+/ip/firewall/layer7-protocol/add name="32125_0" comment="register" regexp="^.+(robursale.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32125_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32125_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32126_0=comment=register=regexp=^.+(robursale.com).*$
+/ip/firewall/layer7-protocol/add name="32126_0" comment="register" regexp="^.+(robursale.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32126_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32126_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32164_0=comment=register=regexp=^.+(federativmix.com).*$
+/ip/firewall/layer7-protocol/add name="32164_0" comment="register" regexp="^.+(federativmix.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32164_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32164_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32166_0=comment=register=regexp=^.+(durmagen.com).*$
+/ip/firewall/layer7-protocol/add name="32166_0" comment="register" regexp="^.+(durmagen.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32166_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32166_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32205_0=comment=register=regexp=^.+(densesmoke.com).*$
+/ip/firewall/layer7-protocol/add name="32205_0" comment="register" regexp="^.+(densesmoke.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32205_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32205_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32207_0=comment=register=regexp=^.+(kimibin.com).*$
+/ip/firewall/layer7-protocol/add name="32207_0" comment="register" regexp="^.+(kimibin.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32207_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32207_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32208_0=comment=register=regexp=^.+(kimibin.com).*$
+/ip/firewall/layer7-protocol/add name="32208_0" comment="register" regexp="^.+(kimibin.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32208_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32208_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32224_0=comment=register=regexp=^.+(kimibin.com).*$
+/ip/firewall/layer7-protocol/add name="32224_0" comment="register" regexp="^.+(kimibin.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32224_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32224_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32225_0=comment=register=regexp=^.+(kimibin.com).*$
+/ip/firewall/layer7-protocol/add name="32225_0" comment="register" regexp="^.+(kimibin.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32225_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32225_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32244_0=comment=register=regexp=^.+(mixpowdershop.com).*$
+/ip/firewall/layer7-protocol/add name="32244_0" comment="register" regexp="^.+(mixpowdershop.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32244_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32244_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32264_0=comment=register=regexp=^.+(mixpowdershop.com).*$
+/ip/firewall/layer7-protocol/add name="32264_0" comment="register" regexp="^.+(mixpowdershop.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32264_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32264_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32265_0=comment=register=regexp=^.+(mixpowdershop.com).*$
+/ip/firewall/layer7-protocol/add name="32265_0" comment="register" regexp="^.+(mixpowdershop.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32265_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32265_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32266_0=comment=register=regexp=^.+(mixpowdershop.com).*$
+/ip/firewall/layer7-protocol/add name="32266_0" comment="register" regexp="^.+(mixpowdershop.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32266_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32266_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32284_0=comment=register=regexp=^.+(mixpowdershop.com).*$
+/ip/firewall/layer7-protocol/add name="32284_0" comment="register" regexp="^.+(mixpowdershop.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32284_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32284_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32285_0=comment=register=regexp=^.+(mixpowdershop.com).*$
+/ip/firewall/layer7-protocol/add name="32285_0" comment="register" regexp="^.+(mixpowdershop.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32285_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32285_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32286_0=comment=register=regexp=^.+(mixpowdershop.com).*$
+/ip/firewall/layer7-protocol/add name="32286_0" comment="register" regexp="^.+(mixpowdershop.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32286_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32286_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32287_0=comment=register=regexp=^.+(vetrinamix.com).*$
+/ip/firewall/layer7-protocol/add name="32287_0" comment="register" regexp="^.+(vetrinamix.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32287_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32287_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32289_0=comment=register=regexp=^.+(vetrinamix.com).*$
+/ip/firewall/layer7-protocol/add name="32289_0" comment="register" regexp="^.+(vetrinamix.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32289_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32289_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32290_0=comment=register=regexp=^.+(vetrinamix.com).*$
+/ip/firewall/layer7-protocol/add name="32290_0" comment="register" regexp="^.+(vetrinamix.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32290_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32290_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32309_0=comment=register=regexp=^.+(vetrinamix.com).*$
+/ip/firewall/layer7-protocol/add name="32309_0" comment="register" regexp="^.+(vetrinamix.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32309_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32309_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32310_0=comment=register=regexp=^.+(vetrinamix.com).*$
+/ip/firewall/layer7-protocol/add name="32310_0" comment="register" regexp="^.+(vetrinamix.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32310_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32310_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32314_0=comment=register=regexp=^.+(jokersila.com).*$
+/ip/firewall/layer7-protocol/add name="32314_0" comment="register" regexp="^.+(jokersila.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32314_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32314_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32315_0=comment=register=regexp=^.+(vetrinamix.com).*$
+/ip/firewall/layer7-protocol/add name="32315_0" comment="register" regexp="^.+(vetrinamix.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32315_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32315_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32316_0=comment=register=regexp=^.+(vetrinamix.com).*$
+/ip/firewall/layer7-protocol/add name="32316_0" comment="register" regexp="^.+(vetrinamix.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32316_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32316_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32328_0=comment=register=regexp=^.+(v-teens.com).*$
+/ip/firewall/layer7-protocol/add name="32328_0" comment="register" regexp="^.+(v-teens.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32328_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32328_0 comment=register
+/ip/firewall/layer7-protocol/add=name=32332_0=comment=register=regexp=^.+(img221.imagevenue.com).*$
+/ip/firewall/layer7-protocol/add name="32332_0" comment="register" regexp="^.+(img221.imagevenue.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=32332_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=32332_0 comment=register
+/ip/firewall/layer7-protocol/add=name=33185_0=comment=register=regexp=^.+(hellblazer.ru).*$
+/ip/firewall/layer7-protocol/add name="33185_0" comment="register" regexp="^.+(hellblazer.ru).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=33185_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=33185_0 comment=register
+/ip/firewall/layer7-protocol/add=name=33227_0=comment=register=regexp=^.+(rclife.biz).*$
+/ip/firewall/layer7-protocol/add name="33227_0" comment="register" regexp="^.+(rclife.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=33227_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=33227_0 comment=register
+/ip/firewall/layer7-protocol/add=name=33236_0=comment=register=regexp=^.+(pharmasintes.com).*$
+/ip/firewall/layer7-protocol/add name="33236_0" comment="register" regexp="^.+(pharmasintes.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=33236_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=33236_0 comment=register
+/ip/firewall/layer7-protocol/add=name=33238_0=comment=register=regexp=^.+(best-maza.net).*$
+/ip/firewall/layer7-protocol/add name="33238_0" comment="register" regexp="^.+(best-maza.net).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=33238_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=33238_0 comment=register
+/ip/firewall/layer7-protocol/add=name=33270_0=comment=register=regexp=^.+(legalrc.biz).*$
+/ip/firewall/layer7-protocol/add name="33270_0" comment="register" regexp="^.+(legalrc.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=33270_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=33270_0 comment=register
+/ip/firewall/layer7-protocol/add=name=33275_0=comment=register=regexp=^.+(pharmasintes.com).*$
+/ip/firewall/layer7-protocol/add name="33275_0" comment="register" regexp="^.+(pharmasintes.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=33275_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=33275_0 comment=register
+/ip/firewall/layer7-protocol/add=name=33287_0=comment=register=regexp=^.+(xn----7sbbaafxa6aqsne1cm.com).*$
+/ip/firewall/layer7-protocol/add name="33287_0" comment="register" regexp="^.+(xn----7sbbaafxa6aqsne1cm.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=33287_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=33287_0 comment=register
+/ip/firewall/layer7-protocol/add=name=33288_0=comment=register=regexp=^.+(xn----7sboarlhdkdkbnr.net).*$
+/ip/firewall/layer7-protocol/add name="33288_0" comment="register" regexp="^.+(xn----7sboarlhdkdkbnr.net).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=33288_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=33288_0 comment=register
+/ip/firewall/layer7-protocol/add=name=33305_0=comment=register=regexp=^.+(legalrc.biz).*$
+/ip/firewall/layer7-protocol/add name="33305_0" comment="register" regexp="^.+(legalrc.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=33305_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=33305_0 comment=register
+/ip/firewall/layer7-protocol/add=name=33309_0=comment=register=regexp=^.+(psyhoforum.biz).*$
+/ip/firewall/layer7-protocol/add name="33309_0" comment="register" regexp="^.+(psyhoforum.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=33309_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=33309_0 comment=register
+/ip/firewall/layer7-protocol/add=name=33351_0=comment=register=regexp=^.+(legalrc.biz).*$
+/ip/firewall/layer7-protocol/add name="33351_0" comment="register" regexp="^.+(legalrc.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=33351_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=33351_0 comment=register
+/ip/firewall/layer7-protocol/add=name=33353_0=comment=register=regexp=^.+(planokur.ru).*$
+/ip/firewall/layer7-protocol/add name="33353_0" comment="register" regexp="^.+(planokur.ru).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=33353_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=33353_0 comment=register
+/ip/firewall/layer7-protocol/add=name=33372_0=comment=register=regexp=^.+(x-emotions.ru).*$
+/ip/firewall/layer7-protocol/add name="33372_0" comment="register" regexp="^.+(x-emotions.ru).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=33372_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=33372_0 comment=register
+/ip/firewall/layer7-protocol/add=name=33388_0=comment=register=regexp=^.+(narkop.cc).*$
+/ip/firewall/layer7-protocol/add name="33388_0" comment="register" regexp="^.+(narkop.cc).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=33388_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=33388_0 comment=register
+/ip/firewall/layer7-protocol/add=name=33394_0=comment=register=regexp=^.+(legalrc.biz).*$
+/ip/firewall/layer7-protocol/add name="33394_0" comment="register" regexp="^.+(legalrc.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=33394_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=33394_0 comment=register
+/ip/firewall/layer7-protocol/add=name=33396_0=comment=register=regexp=^.+(legalrc.biz).*$
+/ip/firewall/layer7-protocol/add name="33396_0" comment="register" regexp="^.+(legalrc.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=33396_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=33396_0 comment=register
+/ip/firewall/layer7-protocol/add=name=33400_0=comment=register=regexp=^.+(rcmir.info).*$
+/ip/firewall/layer7-protocol/add name="33400_0" comment="register" regexp="^.+(rcmir.info).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=33400_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=33400_0 comment=register
+/ip/firewall/layer7-protocol/add=name=33401_0=comment=register=regexp=^.+(legalrc.biz).*$
+/ip/firewall/layer7-protocol/add name="33401_0" comment="register" regexp="^.+(legalrc.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=33401_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=33401_0 comment=register
+/ip/firewall/layer7-protocol/add=name=33413_0=comment=register=regexp=^.+(legalrc.biz).*$
+/ip/firewall/layer7-protocol/add name="33413_0" comment="register" regexp="^.+(legalrc.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=33413_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=33413_0 comment=register
+/ip/firewall/layer7-protocol/add=name=33417_0=comment=register=regexp=^.+(legalrc.biz).*$
+/ip/firewall/layer7-protocol/add name="33417_0" comment="register" regexp="^.+(legalrc.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=33417_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=33417_0 comment=register
+/ip/firewall/layer7-protocol/add=name=34048_0=comment=register=regexp=^.+(eric1234.com).*$
+/ip/firewall/layer7-protocol/add name="34048_0" comment="register" regexp="^.+(eric1234.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=34048_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=34048_0 comment=register
+/ip/firewall/layer7-protocol/add=name=34951_0=comment=register=regexp=^.+(swimpool.biz).*$
+/ip/firewall/layer7-protocol/add name="34951_0" comment="register" regexp="^.+(swimpool.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=34951_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=34951_0 comment=register
+/ip/firewall/layer7-protocol/add=name=34962_0=comment=register=regexp=^.+(swimpool.biz).*$
+/ip/firewall/layer7-protocol/add name="34962_0" comment="register" regexp="^.+(swimpool.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=34962_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=34962_0 comment=register
+/ip/firewall/layer7-protocol/add=name=34963_0=comment=register=regexp=^.+(swimpool.biz).*$
+/ip/firewall/layer7-protocol/add name="34963_0" comment="register" regexp="^.+(swimpool.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=34963_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=34963_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35110_0=comment=register=regexp=^.+(sale-smoke.com).*$
+/ip/firewall/layer7-protocol/add name="35110_0" comment="register" regexp="^.+(sale-smoke.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35110_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35110_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35112_0=comment=register=regexp=^.+(legalrc.biz).*$
+/ip/firewall/layer7-protocol/add name="35112_0" comment="register" regexp="^.+(legalrc.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35112_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35112_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35128_0=comment=register=regexp=^.+(wayaway.biz).*$
+/ip/firewall/layer7-protocol/add name="35128_0" comment="register" regexp="^.+(wayaway.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35128_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35128_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35129_0=comment=register=regexp=^.+(high-stone.org).*$
+/ip/firewall/layer7-protocol/add name="35129_0" comment="register" regexp="^.+(high-stone.org).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35129_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35129_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35132_0=comment=register=regexp=^.+(chemrc.biz).*$
+/ip/firewall/layer7-protocol/add name="35132_0" comment="register" regexp="^.+(chemrc.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35132_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35132_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35133_0=comment=register=regexp=^.+(godspice.com).*$
+/ip/firewall/layer7-protocol/add name="35133_0" comment="register" regexp="^.+(godspice.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35133_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35133_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35134_0=comment=register=regexp=^.+(aromalux.net).*$
+/ip/firewall/layer7-protocol/add name="35134_0" comment="register" regexp="^.+(aromalux.net).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35134_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35134_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35135_0=comment=register=regexp=^.+(smokmix.com).*$
+/ip/firewall/layer7-protocol/add name="35135_0" comment="register" regexp="^.+(smokmix.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35135_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35135_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35136_0=comment=register=regexp=^.+(himworlds.com).*$
+/ip/firewall/layer7-protocol/add name="35136_0" comment="register" regexp="^.+(himworlds.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35136_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35136_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35146_0=comment=register=regexp=^.+(krollikovod.com).*$
+/ip/firewall/layer7-protocol/add name="35146_0" comment="register" regexp="^.+(krollikovod.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35146_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35146_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35147_0=comment=register=regexp=^.+(wayaway.biz).*$
+/ip/firewall/layer7-protocol/add name="35147_0" comment="register" regexp="^.+(wayaway.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35147_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35147_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35164_0=comment=register=regexp=^.+(chemrc.biz).*$
+/ip/firewall/layer7-protocol/add name="35164_0" comment="register" regexp="^.+(chemrc.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35164_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35164_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35165_0=comment=register=regexp=^.+(chemrc.biz).*$
+/ip/firewall/layer7-protocol/add name="35165_0" comment="register" regexp="^.+(chemrc.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35165_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35165_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35166_0=comment=register=regexp=^.+(chemrc.biz).*$
+/ip/firewall/layer7-protocol/add name="35166_0" comment="register" regexp="^.+(chemrc.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35166_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35166_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35167_0=comment=register=regexp=^.+(chemrc.biz).*$
+/ip/firewall/layer7-protocol/add name="35167_0" comment="register" regexp="^.+(chemrc.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35167_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35167_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35195_0=comment=register=regexp=^.+(wayaway.biz).*$
+/ip/firewall/layer7-protocol/add name="35195_0" comment="register" regexp="^.+(wayaway.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35195_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35195_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35196_0=comment=register=regexp=^.+(chemrc.biz).*$
+/ip/firewall/layer7-protocol/add name="35196_0" comment="register" regexp="^.+(chemrc.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35196_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35196_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35250_0=comment=register=regexp=^.+(legalrc.biz).*$
+/ip/firewall/layer7-protocol/add name="35250_0" comment="register" regexp="^.+(legalrc.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35250_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35250_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35260_0=comment=register=regexp=^.+(pinkpussyz.net).*$
+/ip/firewall/layer7-protocol/add name="35260_0" comment="register" regexp="^.+(pinkpussyz.net).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35260_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35260_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35267_0=comment=register=regexp=^.+(chemrc.biz).*$
+/ip/firewall/layer7-protocol/add name="35267_0" comment="register" regexp="^.+(chemrc.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35267_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35267_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35272_0=comment=register=regexp=^.+(smokmix.com).*$
+/ip/firewall/layer7-protocol/add name="35272_0" comment="register" regexp="^.+(smokmix.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35272_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35272_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35273_0=comment=register=regexp=^.+(narkop.com).*$
+/ip/firewall/layer7-protocol/add name="35273_0" comment="register" regexp="^.+(narkop.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35273_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35273_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35432_0=comment=register=regexp=^.+(mixodrom.com).*$
+/ip/firewall/layer7-protocol/add name="35432_0" comment="register" regexp="^.+(mixodrom.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35432_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35432_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35433_0=comment=register=regexp=^.+(densesmoke.com).*$
+/ip/firewall/layer7-protocol/add name="35433_0" comment="register" regexp="^.+(densesmoke.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35433_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35433_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35434_0=comment=register=regexp=^.+(otilagod.com).*$
+/ip/firewall/layer7-protocol/add name="35434_0" comment="register" regexp="^.+(otilagod.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35434_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35434_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35435_0=comment=register=regexp=^.+(legalrc.biz).*$
+/ip/firewall/layer7-protocol/add name="35435_0" comment="register" regexp="^.+(legalrc.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35435_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35435_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35436_0=comment=register=regexp=^.+(legal-kaif.com).*$
+/ip/firewall/layer7-protocol/add name="35436_0" comment="register" regexp="^.+(legal-kaif.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35436_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35436_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35437_0=comment=register=regexp=^.+(kolmy.com).*$
+/ip/firewall/layer7-protocol/add name="35437_0" comment="register" regexp="^.+(kolmy.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35437_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35437_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35442_0=comment=register=regexp=^.+(leninjiv.com).*$
+/ip/firewall/layer7-protocol/add name="35442_0" comment="register" regexp="^.+(leninjiv.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35442_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35442_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35443_0=comment=register=regexp=^.+(mnogosmeha.com).*$
+/ip/firewall/layer7-protocol/add name="35443_0" comment="register" regexp="^.+(mnogosmeha.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35443_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35443_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35444_0=comment=register=regexp=^.+(saleporoh.com).*$
+/ip/firewall/layer7-protocol/add name="35444_0" comment="register" regexp="^.+(saleporoh.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35444_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35444_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35459_0=comment=register=regexp=^.+(shopmixes.com).*$
+/ip/firewall/layer7-protocol/add name="35459_0" comment="register" regexp="^.+(shopmixes.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35459_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35459_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35460_0=comment=register=regexp=^.+(korenakim.com).*$
+/ip/firewall/layer7-protocol/add name="35460_0" comment="register" regexp="^.+(korenakim.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35460_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35460_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35461_0=comment=register=regexp=^.+(mixodrom.com).*$
+/ip/firewall/layer7-protocol/add name="35461_0" comment="register" regexp="^.+(mixodrom.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35461_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35461_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35462_0=comment=register=regexp=^.+(krauzes.com).*$
+/ip/firewall/layer7-protocol/add name="35462_0" comment="register" regexp="^.+(krauzes.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35462_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35462_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35463_0=comment=register=regexp=^.+(mixpowdershop.com).*$
+/ip/firewall/layer7-protocol/add name="35463_0" comment="register" regexp="^.+(mixpowdershop.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35463_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35463_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35464_0=comment=register=regexp=^.+(mixstorm.com).*$
+/ip/firewall/layer7-protocol/add name="35464_0" comment="register" regexp="^.+(mixstorm.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35464_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35464_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35465_0=comment=register=regexp=^.+(mirumix.com).*$
+/ip/firewall/layer7-protocol/add name="35465_0" comment="register" regexp="^.+(mirumix.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35465_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35465_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35466_0=comment=register=regexp=^.+(dudkasmeha.com).*$
+/ip/firewall/layer7-protocol/add name="35466_0" comment="register" regexp="^.+(dudkasmeha.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35466_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35466_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35467_0=comment=register=regexp=^.+(vertusmes.com).*$
+/ip/firewall/layer7-protocol/add name="35467_0" comment="register" regexp="^.+(vertusmes.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35467_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35467_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35468_0=comment=register=regexp=^.+(debridyma.com).*$
+/ip/firewall/layer7-protocol/add name="35468_0" comment="register" regexp="^.+(debridyma.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35468_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35468_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35469_0=comment=register=regexp=^.+(silamixes.com).*$
+/ip/firewall/layer7-protocol/add name="35469_0" comment="register" regexp="^.+(silamixes.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35469_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35469_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35470_0=comment=register=regexp=^.+(avtosales.com).*$
+/ip/firewall/layer7-protocol/add name="35470_0" comment="register" regexp="^.+(avtosales.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35470_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35470_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35471_0=comment=register=regexp=^.+(zebradudka.biz).*$
+/ip/firewall/layer7-protocol/add name="35471_0" comment="register" regexp="^.+(zebradudka.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35471_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35471_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35472_0=comment=register=regexp=^.+(drugusers.cc).*$
+/ip/firewall/layer7-protocol/add name="35472_0" comment="register" regexp="^.+(drugusers.cc).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35472_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35472_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35478_0=comment=register=regexp=^.+(showlip.com).*$
+/ip/firewall/layer7-protocol/add name="35478_0" comment="register" regexp="^.+(showlip.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35478_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35478_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35479_0=comment=register=regexp=^.+(sexgaz.com).*$
+/ip/firewall/layer7-protocol/add name="35479_0" comment="register" regexp="^.+(sexgaz.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35479_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35479_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35481_0=comment=register=regexp=^.+(chan.ru).*$
+/ip/firewall/layer7-protocol/add name="35481_0" comment="register" regexp="^.+(chan.ru).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35481_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35481_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35747_0=comment=register=regexp=^.+(narkom.biz).*$
+/ip/firewall/layer7-protocol/add name="35747_0" comment="register" regexp="^.+(narkom.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35747_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35747_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35757_0=comment=register=regexp=^.+(litrc.com).*$
+/ip/firewall/layer7-protocol/add name="35757_0" comment="register" regexp="^.+(litrc.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35757_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35757_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35761_0=comment=register=regexp=^.+(legalitolko.com).*$
+/ip/firewall/layer7-protocol/add name="35761_0" comment="register" regexp="^.+(legalitolko.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35761_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35761_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35763_0=comment=register=regexp=^.+(mskspice.com).*$
+/ip/firewall/layer7-protocol/add name="35763_0" comment="register" regexp="^.+(mskspice.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35763_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35763_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35769_0=comment=register=regexp=^.+(growerz.org).*$
+/ip/firewall/layer7-protocol/add name="35769_0" comment="register" regexp="^.+(growerz.org).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35769_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35769_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35770_0=comment=register=regexp=^.+(swimpool.biz).*$
+/ip/firewall/layer7-protocol/add name="35770_0" comment="register" regexp="^.+(swimpool.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35770_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35770_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35771_0=comment=register=regexp=^.+(pleasuresru.cc).*$
+/ip/firewall/layer7-protocol/add name="35771_0" comment="register" regexp="^.+(pleasuresru.cc).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35771_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35771_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35772_0=comment=register=regexp=^.+(weedhash.biz).*$
+/ip/firewall/layer7-protocol/add name="35772_0" comment="register" regexp="^.+(weedhash.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35772_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35772_0 comment=register
+/ip/firewall/layer7-protocol/add=name=35989_0=comment=register=regexp=^.+(russian-drugs.com).*$
+/ip/firewall/layer7-protocol/add name="35989_0" comment="register" regexp="^.+(russian-drugs.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=35989_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=35989_0 comment=register
+/ip/firewall/layer7-protocol/add=name=36002_0=comment=register=regexp=^.+(ua-legal.com).*$
+/ip/firewall/layer7-protocol/add name="36002_0" comment="register" regexp="^.+(ua-legal.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=36002_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=36002_0 comment=register
+/ip/firewall/layer7-protocol/add=name=36004_0=comment=register=regexp=^.+(blue-chemical.biz).*$
+/ip/firewall/layer7-protocol/add name="36004_0" comment="register" regexp="^.+(blue-chemical.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=36004_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=36004_0 comment=register
+/ip/firewall/layer7-protocol/add=name=36006_0=comment=register=regexp=^.+(legal-land.com).*$
+/ip/firewall/layer7-protocol/add name="36006_0" comment="register" regexp="^.+(legal-land.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=36006_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=36006_0 comment=register
+/ip/firewall/layer7-protocol/add=name=36008_0=comment=register=regexp=^.+(legal-land.com).*$
+/ip/firewall/layer7-protocol/add name="36008_0" comment="register" regexp="^.+(legal-land.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=36008_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=36008_0 comment=register
+/ip/firewall/layer7-protocol/add=name=36011_0=comment=register=regexp=^.+(legal-land.com).*$
+/ip/firewall/layer7-protocol/add name="36011_0" comment="register" regexp="^.+(legal-land.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=36011_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=36011_0 comment=register
+/ip/firewall/layer7-protocol/add=name=36012_0=comment=register=regexp=^.+(legalniybiz.com).*$
+/ip/firewall/layer7-protocol/add name="36012_0" comment="register" regexp="^.+(legalniybiz.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=36012_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=36012_0 comment=register
+/ip/firewall/layer7-protocol/add=name=36013_0=comment=register=regexp=^.+(legalniybiz.com).*$
+/ip/firewall/layer7-protocol/add name="36013_0" comment="register" regexp="^.+(legalniybiz.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=36013_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=36013_0 comment=register
+/ip/firewall/layer7-protocol/add=name=36014_0=comment=register=regexp=^.+(legalniybiz.com).*$
+/ip/firewall/layer7-protocol/add name="36014_0" comment="register" regexp="^.+(legalniybiz.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=36014_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=36014_0 comment=register
+/ip/firewall/layer7-protocol/add=name=36016_0=comment=register=regexp=^.+(ganjeprom.biz).*$
+/ip/firewall/layer7-protocol/add name="36016_0" comment="register" regexp="^.+(ganjeprom.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=36016_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=36016_0 comment=register
+/ip/firewall/layer7-protocol/add=name=36017_0=comment=register=regexp=^.+(legalmix.org).*$
+/ip/firewall/layer7-protocol/add name="36017_0" comment="register" regexp="^.+(legalmix.org).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=36017_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=36017_0 comment=register
+/ip/firewall/layer7-protocol/add=name=36018_0=comment=register=regexp=^.+(legalmix.org).*$
+/ip/firewall/layer7-protocol/add name="36018_0" comment="register" regexp="^.+(legalmix.org).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=36018_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=36018_0 comment=register
+/ip/firewall/layer7-protocol/add=name=36019_0=comment=register=regexp=^.+(legal-land.com).*$
+/ip/firewall/layer7-protocol/add name="36019_0" comment="register" regexp="^.+(legal-land.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=36019_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=36019_0 comment=register
+/ip/firewall/layer7-protocol/add=name=36020_0=comment=register=regexp=^.+(8-800-555-36-37.com).*$
+/ip/firewall/layer7-protocol/add name="36020_0" comment="register" regexp="^.+(8-800-555-36-37.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=36020_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=36020_0 comment=register
+/ip/firewall/layer7-protocol/add=name=36021_0=comment=register=regexp=^.+(8-800-555-36-37.com).*$
+/ip/firewall/layer7-protocol/add name="36021_0" comment="register" regexp="^.+(8-800-555-36-37.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=36021_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=36021_0 comment=register
+/ip/firewall/layer7-protocol/add=name=36022_0=comment=register=regexp=^.+(8-800-555-36-37.com).*$
+/ip/firewall/layer7-protocol/add name="36022_0" comment="register" regexp="^.+(8-800-555-36-37.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=36022_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=36022_0 comment=register
+/ip/firewall/layer7-protocol/add=name=36130_0=comment=register=regexp=^.+(psyplants.org).*$
+/ip/firewall/layer7-protocol/add name="36130_0" comment="register" regexp="^.+(psyplants.org).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=36130_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=36130_0 comment=register
+/ip/firewall/layer7-protocol/add=name=36170_0=comment=register=regexp=^.+(spicef.com).*$
+/ip/firewall/layer7-protocol/add name="36170_0" comment="register" regexp="^.+(spicef.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=36170_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=36170_0 comment=register
+/ip/firewall/layer7-protocol/add=name=36189_0=comment=register=regexp=^.+(researchstore.net).*$
+/ip/firewall/layer7-protocol/add name="36189_0" comment="register" regexp="^.+(researchstore.net).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=36189_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=36189_0 comment=register
+/ip/firewall/layer7-protocol/add=name=36196_0=comment=register=regexp=^.+(kupimiks.com).*$
+/ip/firewall/layer7-protocol/add name="36196_0" comment="register" regexp="^.+(kupimiks.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=36196_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=36196_0 comment=register
+/ip/firewall/layer7-protocol/add=name=36205_0=comment=register=regexp=^.+(crystalab.biz).*$
+/ip/firewall/layer7-protocol/add name="36205_0" comment="register" regexp="^.+(crystalab.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=36205_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=36205_0 comment=register
+/ip/firewall/layer7-protocol/add=name=36206_0=comment=register=regexp=^.+(crystalab.info).*$
+/ip/firewall/layer7-protocol/add name="36206_0" comment="register" regexp="^.+(crystalab.info).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=36206_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=36206_0 comment=register
+/ip/firewall/layer7-protocol/add=name=36218_0=comment=register=regexp=^.+(legal-land.com).*$
+/ip/firewall/layer7-protocol/add name="36218_0" comment="register" regexp="^.+(legal-land.com).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=36218_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=36218_0 comment=register
+/ip/firewall/layer7-protocol/add=name=36221_0=comment=register=regexp=^.+(ganjeprom.biz).*$
+/ip/firewall/layer7-protocol/add name="36221_0" comment="register" regexp="^.+(ganjeprom.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=36221_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=36221_0 comment=register
+/ip/firewall/layer7-protocol/add=name=36222_0=comment=register=regexp=^.+(ganjeprom.biz).*$
+/ip/firewall/layer7-protocol/add name="36222_0" comment="register" regexp="^.+(ganjeprom.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=36222_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=36222_0 comment=register
+/ip/firewall/layer7-protocol/add=name=36223_0=comment=register=regexp=^.+(ganjeprom.biz).*$
+/ip/firewall/layer7-protocol/add name="36223_0" comment="register" regexp="^.+(ganjeprom.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=36223_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=36223_0 comment=register
+/ip/firewall/layer7-protocol/add=name=36224_0=comment=register=regexp=^.+(ganjeprom.biz).*$
+/ip/firewall/layer7-protocol/add name="36224_0" comment="register" regexp="^.+(ganjeprom.biz).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=36224_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=36224_0 comment=register
+/ip/firewall/layer7-protocol/add=name=36253_0=comment=register=regexp=^.+(hiichan.org).*$
+/ip/firewall/layer7-protocol/add name="36253_0" comment="register" regexp="^.+(hiichan.org).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=36253_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=36253_0 comment=register
+/ip/firewall/layer7-protocol/add=name=36255_0=comment=register=regexp=^.+(hentaika.net).*$
+/ip/firewall/layer7-protocol/add name="36255_0" comment="register" regexp="^.+(hentaika.net).*"
+/ip/firewall/filter/add=action=drop=chain=forward=disabled=no=dst-port=80=layer7-protocol=36255_0=protocol=tcp=src-address==comment=register
+/ip firewall filter add action=drop chain=forward disabled=no protocol==tcp dst-port=80=layer7-protocol=36255_0 comment=register
